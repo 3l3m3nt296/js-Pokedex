@@ -1,1 +1,10 @@
-alert('Hello world');
+ let myname ='hamburguer';
+ document.write(myname);
+ myname ='hot dog';
+ document.write(myname);
+ myname = 'sushi';
+ document.write(myname);
+ myname ='salad';
+ document.write(myname);
+ myname = 'soup';
+ document.write(myname);
