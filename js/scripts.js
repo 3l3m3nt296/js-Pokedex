@@ -1,10 +1,10 @@
- let myname ='hamburguer';
+ let myname ='hamburguer  ';
  document.write(myname);
- myname ='hot dog';
+ myname ='hot dog  ';
  document.write(myname);
- myname = 'sushi';
+ myname = 'sushi  ';
  document.write(myname);
- myname ='salad';
+ myname ='salad  ';
  document.write(myname);
  myname = 'soup';
  document.write(myname);
