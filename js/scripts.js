@@ -26,7 +26,7 @@ for (let i = 0; i < pokemonList.length; i++){
   document.write('<li>');
     // Include name and height
     document.write(pokemonList[i].name + ' (height ' + pokemonList[i].height + ')');
-    // If height is over 1m, write "Wow, That is big!"
+    // If height is over 1m, write "Cool, That is nice!"
     if (pokemonList[i].height > 1) document.write(' - cool, that\'s nice! ');
   document.write('</li>');
 }
