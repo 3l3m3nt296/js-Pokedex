@@ -1,4 +1,4 @@
-
+let pokemonRepository = (function () {
 let pokemonList = [
     {
       name: 'Bulbasur',
@@ -23,6 +23,18 @@ let pokemonList = [
      
     }
   ];
+
+  function getAll() {
+    return pokemonList;
+  }
+  function add(item) {
+    pokemonList.push(item);
+  }
+  return {
+    getAll: getAll,
+    add: add
+  };
+})();
 
 
   // unordered list format
