@@ -39,8 +39,8 @@ pokemonRepository.getAll().forEach(function(pokemon) {
   // Display looped Pokémon on the DOM, with a line break.
   document.write('<br>' + '<h1>' + pokemon.name + '</h1>' + ` (height: ${pokemon.height}) `);
   //Conditional loop; checks if height is greater than 5.
-  if (pokemon.height > 5) {
-    document.write('- WOW that\'s a big boi!');
+  if (pokemon.height > 1) {
+    document.write('- WOW that\'s a big boy!');
   }
   //Add line break after each Pokemon.
   document.write('<br>')
