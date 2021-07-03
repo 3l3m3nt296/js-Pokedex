@@ -37,13 +37,13 @@ let pokemonList = [
 })();
 pokemonRepository.getAll().forEach(function(pokemon) {
   // Display looped Pokémon on the DOM, with a line break.
-  document.write('<br>' + '<h1>' + pokemon.name + '</h1>' + ` (height: ${pokemon.height}) `);
+  document.write('<br>' + '<li>' + pokemon.name + '</li>' + ` (height: ${pokemon.height}) `);
   //Conditional loop; checks if height is greater than 5.
   if (pokemon.height > 1) {
     document.write('- WOW that\'s a big boy!');
   }
-  //Add line break after each Pokemon.
-  document.write('<br>')
+  document.write('</ul>');
+  
 });
 
 
@@ -56,7 +56,7 @@ for (let i = 0; i < pokemonList.length; i++){
     // Include name and height
     document.write(pokemonList[i].name + ' (height ' + pokemonList[i].height + ')');
     // If height is over 1m, write "Wow, That is big!"
-    if (pokemonList[i].height > 0,5) document.write(' - Wow, that\'s big! ');
+    if (pokemonList[i].height > 0) document.write(' - Wow, that\'s big! ');
   document.write('</li>');
 }
 
