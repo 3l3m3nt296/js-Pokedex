@@ -1,32 +1,32 @@
 let pokemonRepository = (function () {
   const pokemonList = [{
-      name: 'Bulbasur',
-      height: 0.7,
-      types: ['plant','poison'],
-      number: 1, 
+     name: 'Bulbasur',
+     height: 0.7,
+     types: ['plant','poison'],
+     number: 1, 
      },
      {
-      name: 'Bisaknosp',
-      height: 1.0,
-      types: ['plant','poison'],
-      number: 2,
+     name: 'Bisaknosp',
+     height: 1.0,
+     types: ['plant','poison'],
+     number: 2,
      },
      {
-      name: 'MBisaflor',
-      height: 2,
-      types: ['plant','poison'],
-      number:3 ,
+     name: 'MBisaflor',
+     height: 2,
+     types: ['plant','poison'],
+     number:3 ,
     },
     ];
     function getAll() {
-      return pokemonList;
+    return pokemonList;
     }
     function add(item) {
-      pokemonList.push(item);
+    pokemonList.push(item);
     }
     return {
-      getAll: getAll,
-      add: add
+    getAll: getAll,
+    add: add
     };
 })();
     document.write('<ul>')
