@@ -6,14 +6,12 @@ let pokemonRepository = (function () {
       number: 1, 
      },
      {
-
       name: 'Bisaknosp',
       height: 1.0,
       types: ['plant','poison'],
       number: 2,
      },
      {
-
       name: 'MBisaflor',
       height: 2,
       types: ['plant','poison'],
