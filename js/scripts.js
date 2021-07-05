@@ -31,7 +31,6 @@ let pokemonRepository = (function () {
       add: add
     };
 })();
-    
     document.write('<ul>')
 
     pokemonRepository.getAll().forEach(function(pokemon) {
