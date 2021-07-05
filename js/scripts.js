@@ -32,7 +32,6 @@ let pokemonRepository = (function () {
     };
 })();
     document.write('<ul>')
-
     pokemonRepository.getAll().forEach(function(pokemon) {
       document.write('<li>');
       document.write('<h1>'+pokemon.name +'</h1>'+`(types: ${pokemon.types})`+`(height: ${pokemon.height})`);
