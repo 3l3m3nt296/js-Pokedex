@@ -41,7 +41,7 @@ let pokemonRepository = (function () {
       if (pokemon.height > 1) document.write(' - Wow, that\'s big! ');
     document.write('</li>');
   });
-  document.write('</ul>');
+    document.write('</ul>');
        
 
 
