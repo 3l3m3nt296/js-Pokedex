@@ -38,6 +38,7 @@ let pokemonRepository = (function () {
     pokemonRepository.getAll().forEach(function(pokemon) {
       document.write('<li>');
       document.write('<h1>'+pokemon.name +'</h1>'+`(types: ${pokemon.types})`+`(height: ${pokemon.height})`);
+      if (pokemon.height > 1) document.write(' - Wow, that\'s big! ');
     document.write('</li>');
   });
   document.write('</ul>');
