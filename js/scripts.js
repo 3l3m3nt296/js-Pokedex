@@ -1,21 +1,21 @@
 let pokemonRepository = (function () {
   const pokemonList = [{
-     name: 'Bulbasur',
-     height: 0.7,
-     types: ['plant','poison'],
-     number: 1, 
-     },
-     {
-     name: 'Bisaknosp',
-     height: 1.0,
-     types: ['plant','poison'],
-     number: 2,
-     },
-     {
-     name: 'MBisaflor',
-     height: 2,
-     types: ['plant','poison'],
-     number:3 ,
+    name: 'Bulbasur',
+    height: 0.7,
+    types: ['plant','poison'],
+    number: 1, 
+    },
+    {
+    name: 'Bisaknosp',
+    height: 1.0,
+    types: ['plant','poison'],
+    number: 2,
+    },
+    {
+    name: 'MBisaflor',
+    height: 2,
+    types: ['plant','poison'],
+    number:3 ,
     },
     ];
     function getAll() {
@@ -28,12 +28,12 @@ let pokemonRepository = (function () {
     getAll: getAll,
     add: add
     };
-})();
+    })();
     document.write('<ul>')
     pokemonRepository.getAll().forEach(function(pokemon) {
-      document.write('<li>');
-      document.write('<h1>'+pokemon.name +'</h1>'+`(types: ${pokemon.types})`+`(height: ${pokemon.height})`);
-      if (pokemon.height > 1) document.write(' - Wow, that\'s big! ');
+    document.write('<li>');
+    document.write('<h1>'+pokemon.name +'</h1>'+`(types: ${pokemon.types})`+`(height: ${pokemon.height})`);
+    if (pokemon.height > 1) document.write(' - Wow, that\'s big! ');
     document.write('</li>');
   });
     document.write('</ul>');
