@@ -34,9 +34,9 @@ document.write("<ul>");
 pokemonRepository.getAll().forEach(function (pokemon) {
   document.write("<li>");
   document.write(
-    "<h1>" +
+    "<h2>" +
       pokemon.name +
-      "</h1>" +
+      "</h2>" +
       `(types: ${pokemon.types})` +
       `(height: ${pokemon.height})`
   );
