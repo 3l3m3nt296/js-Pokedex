@@ -1,3 +1,4 @@
+// Pokemon data to display in app.
 let pokemonRepository = (function () {
   const pokemonList = [
     {
@@ -19,9 +20,11 @@ let pokemonRepository = (function () {
       number: 3,
     },
   ];
+  // returns an array of all the Pokemon in pokemonList
   function getAll() {
     return pokemonList;
   }
+
   function add(item) {
     pokemonList.push(item);
   }
@@ -30,6 +33,7 @@ let pokemonRepository = (function () {
     add: add,
   };
 })();
+
 document.write("<ul>");
 pokemonRepository.getAll().forEach(function (pokemon) {
   document.write("<li>");
