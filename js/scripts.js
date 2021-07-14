@@ -1,6 +1,5 @@
 // Pokemon data to display in app.
-let pokemonRepository = (function () {
-  const pokemonList = [
+let pokemonList = [
     {
       name: "Bulbasur",
       height: 0.7,
@@ -32,6 +31,10 @@ let pokemonRepository = (function () {
     getAll: getAll,
     add: add,
   };
+  pokemonList.forEach(function(name) {
+    console.log(name);
+  });
+
 })();
 
 document.write("<ul>");
