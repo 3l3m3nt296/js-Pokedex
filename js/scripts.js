@@ -20,7 +20,8 @@ let pokemonRepository = (function () {
       number: 3,
     },
   ];
-  // returns an array of all the Pokemon in pokemonList
+
+  // Returns an array of all the Pokemon in pokemonList
   function getAll() {
     return pokemonList;
   }
@@ -28,28 +29,34 @@ let pokemonRepository = (function () {
   function add(item) {
     pokemonList.push(item);
   }
+
+  function addListItem(pokemon) {
+    let pokemonList = document.querySelector(".pokemon-list");
+    let listpokemon = document.createElement("li");
+    let button = document.createElement("button");
+    button.innerText = pokemon.name;
+    button.classList.add("button-class");
+
+    button.addEventListener('click', function (event) {
+      showDetails(pokemon);
+    });
+    listpokemon.appendChild(button);
+    pokemonList.appendChild(listpokemon);
+  }
+
   return {
-    getAll: getAll,
     add: add,
+    getAll: getAll,
+    addListItem: addListItem
   };
-  pokemonList.forEach(function (name) {
-    console.log(name);
-  });
+
+  //Console Log the pokemon's name on click
+  function showDetails(pokemon) {
+    console.log(pokemon.name);
+  }
 
 })();
 
-document.write("<ul>");
 pokemonRepository.getAll().forEach(function (pokemon) {
-  document.write("<li>");
-  document.write(
-    "<p>" +
-    pokemon.name +
-    "</p>" +
-    `(types: ${pokemon.types})` +
-    `(height: ${pokemon.height})`
-  );
-  if (pokemon.height > 1) document.write(" - Wow, that's big! ");
-  document.write("</li>");
+  pokemonRepository.addListItem(pokemon);
 });
-document.write("</ul>");
-
