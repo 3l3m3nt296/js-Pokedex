@@ -2,16 +2,13 @@ body {
   background-color: rgb(39, 136, 221);
   text-align: center;
   font-size: 25px;
+  
 }
 
 .page-header__item {
   flex: 0 1 200px;
   padding-bottom: 35px;
 }
-
-
-
-
 .button-class {
   background-color: #4caf50; /* Green */
   border: none;
@@ -28,6 +25,7 @@ body {
   background-color: white;
   color: black;
   border: 2px solid #4caf50;
+  width: 12%;
 }
 h1 {
   font-family: sans-serif;
