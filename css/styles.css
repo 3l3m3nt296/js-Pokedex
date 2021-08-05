@@ -62,8 +62,21 @@ footer {
     }
 
    .button-class {
-     width: 40%;
+     width: 20%;
    }
+   .page-header__item {
+     width: 80%;
+   }
+  }
+  @media all and (min-width: 500px) and (max-width: 740px){
+    .grid {
+      -ms-grid-columns: 1fr 18px 1fr;
+      grid-template-columns: 1fr 1fr;
+  
+    }
+    .page-header__item {
+      width: 80%;
+    }
   }
   @media all and (max-width: 740px) {
     .grid {
@@ -73,7 +86,11 @@ footer {
       grid-column: auto / auto;
       grid-row: auto / auto;
     }
+
     .button-class {
       width: 40%;
+    }
+    .page-header__item {
+      width: 80%;
     }
   }
