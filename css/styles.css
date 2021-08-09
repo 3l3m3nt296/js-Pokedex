@@ -67,6 +67,18 @@ footer {
    .page-header__item {
      width: 80%;
    }
+   footer {
+  clear: both;
+  height: 90px;
+  width: 50%;
+  display: block;
+  bottom: 0px;
+  width: 100vw;
+  max-width: 100%;
+  position: fixed;
+  opacity: 60%;
+  text-align: left;
+  }
   }
   @media all and (min-width: 500px) and (max-width: 740px){
     .grid {
@@ -91,6 +103,6 @@ footer {
       width: 40%;
     }
     .page-header__item {
-      width: 80%;
+      width: 100%;
     }
   }
