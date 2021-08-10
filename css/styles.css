@@ -59,7 +59,6 @@ footer {
   max-width: 100%;
   position: fixed;
   background-color: rgb(38, 107, 235);
-  z-index: all;
   opacity: 60%;
   text-align: right;
 }
@@ -106,9 +105,7 @@ footer {
 
     .page-header__item {
       width: 100%;
-      margin-left: 3%;
-    }
 
-    body {
-      margin-left: 3%;
     }
+  }
+}
