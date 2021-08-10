@@ -56,18 +56,7 @@ let pokemonRepository = (function() {
     });
     
     
-      // Return a promise that resolves when confirmed, else rejects
-      return new Promise((resolve, reject) => {
-        cancelButton.addEventListener('click', () => {
-          hideModal();
-          reject();
-        });
-        confirmButton.addEventListener('click', () => {
-          hideModal();
-          resolve();
-        })
-      });
-    }
+     
 
   // Return a promise that resolves when confirmed, else rejects
   return new Promise((resolve, reject) => {
