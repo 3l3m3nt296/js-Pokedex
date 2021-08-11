@@ -56,6 +56,8 @@ ul {
 
 }
 
+
+
 #modal-container {
   display: none;
 }
@@ -74,6 +76,27 @@ ul {
   display: none;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.Pokeheight,
+.Poketype,
+.Pokename {
+  text-align: center;
+}
+
+.Pokeheight,
+.Poketype {
+  font-size: 20px;
+}
+
+.Pokename {
+  font-size: 30px;
+}
+
+
 
 
 .list-group-item {
@@ -84,6 +107,11 @@ ul {
   font-size: 20px;
   cursor: pointer;
   transition-duration: 0.4s;
+}
+
+li {
+  flex: 1 1 0;
+  padding: 10px;
 }
 
 footer {
