@@ -44,36 +44,20 @@ h1 {
 }
 
 h2 {
-  color: aqua;
+  color: rgb(241, 245, 245);
 }
 
 ul {
   list-style-type: none;
 }
 
+div modal-body {
+  color: aliceblue;
+}
+
 .container {
   display: grid;
 
-}
-
-
-
-#modal-container {
-  display: none;
-}
-
-.modal h1 {
-  margin-top: 0;
-  color: rgb(207, 233, 185);
-}
-
-.modal p {
-  margin-bottom: 0;
-  color: rgb(224, 238, 198);
-}
-
-#modal-container {
-  display: none;
 }
 
 .image-container {
@@ -99,8 +83,9 @@ ul {
 
 
 
+
 .list-group-item {
-  background-color: #05ff93;
+  background-color: #f1f8f5;
   text-align: center;
   position: relative;
   font-family: inherit;
@@ -113,6 +98,43 @@ li {
   flex: 1 1 0;
   padding: 10px;
 }
+
+
+
+.modal {
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+  background: rgb(3, 19, 248);
+  border: 1px solid rgb(247, 247, 247);
+  box-shadow: rgba(221, 78, 78, 0.24) 0px 3px 8px;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  max-height: 400px;
+  border-radius: 15px;
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal h1 {
+  margin-top: 0;
+  color: rgb(218, 37, 37);
+}
+
+.modal p {
+  margin-bottom: 0;
+  color: black;
+}
+
+#modal-container {
+  display: none;
+}
+
+
 
 footer {
   clear: both;
