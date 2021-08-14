@@ -81,6 +81,26 @@ li {
   padding: 10px;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.Pokeheight,
+.Poketype,
+.Pokename {
+  text-align: center;
+}
+
+.Pokeheight,
+.Poketype {
+  font-size: 20px;
+}
+
+.Pokename {
+  font-size: 30px;
+}
+
 .modal {
   margin: auto;
   text-align: center;
@@ -121,26 +141,6 @@ li {
   display: none;
 }
 
-
-.image-container {
-  display: flex;
-  justify-content: center;
-}
-
-.Pokeheight,
-.Poketype,
-.Pokename {
-  text-align: center;
-}
-
-.Pokeheight,
-.Poketype {
-  font-size: 20px;
-}
-
-.Pokename {
-  font-size: 30px;
-}
 
 
 footer {
