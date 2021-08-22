@@ -1,55 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>pokedex</title>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>pokedex</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <header>
-    <img src="img/pokemonlog.png" alt="Pokemon logo" class="page-header__item">
-    <h1>pokedex</h1>
-  </header>
-  <nav class="navbar justify-content-center">
-    <a class="click here " href="index.html"></a>
+    <header>
+        <img src="img/pokemonlog.png" alt="Pokemon logo" class="page-header__item">
+        <h1>pokedex</h1>
+    </header>
+    <nav class="navbar justify-content-center">
+        <a class="click here " href="index.html"></a>
 
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search.." aria-label="Search">
-    </form>
-  </nav> 
-<!--Modal content--> 
-  <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog" aria-labelledby="pokemonModalLabel"
-     aria-modal="true">
-    <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h2 class="modal-title">Modal Header</h2>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close
-      </button>
-      </div>
-    </div>
-    </div>
-  </div>
-  <footer>
-    <a href="https://github.com/3l3m3nt296">
-      <img src="img/GitHub_Logo.png" alt="github" width="150"></a>
-  </footer>
-  
-  
-  <script src="js/fetch.js"></script>
-  <script src="js/promises.js"></script>
-  <script src="js/tota11y.min.js"></script>
-  <script src="js/scripts.js"></script>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search.." aria-label="Search">
+        </form>
+    </nav>
 
-</body>
+    <button id='show-modal'>Show modal</button>
+    <div id='modal-container'>
+    </div>
+    <ul class="list-group"></ul>
+    <script src="js/scripts.js"></script>
 
 </html>
