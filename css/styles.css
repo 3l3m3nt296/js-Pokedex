@@ -200,8 +200,6 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .button-class {
-    width: 100%;
   button {
     width: 38%;
   }
