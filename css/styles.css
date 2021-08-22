@@ -27,11 +27,29 @@
 .modal {
   margin: auto;
   box-sizing: border-box;
+  background: #fff;
   padding: 15px;
   width: 100%;
+  max-width: 700px;
+  text-align: center;
 }
 
+.modal img {
+  height: 200px;
+}
 
+#modal-container.is-visible {
+  /* CSS for modal container - add your own desired CSS styles here */
+  display: block;
+}
+
+.modal-close {
+  float: right;
+  -webkit-appearance: none;
+  border: 0;
+  background: none;
+  color: #777;
+  text-decoration: underline;
 }
 
 .modal h1 {
