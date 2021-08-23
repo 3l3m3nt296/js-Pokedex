@@ -213,7 +213,7 @@ footer {
     width: 100%;
   }
 
-  pokemon @media all and (min-width: 500px) and (max-width: 740px) {
+  @media all and (min-width: 500px) and (max-width: 740px) {
     .grid {
       -ms-grid-columns: 1fr 18px 1fr;
       grid-template-columns: 1fr 1fr;
