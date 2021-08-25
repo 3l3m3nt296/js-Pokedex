@@ -131,7 +131,15 @@ let pokemonRepository = (function () {
     hideModal();
   }
 });
- 
+  window.addEventListener('click' ,(e) => {
+   let modalContainer = document.querySelector('#modal-container');
+   let modal = document.querySelector('modal')
+   if (modalContainer.classList.contains('is-visible') && e.target != modal)
+   hideModal() 
+  }
+ );
+
+
  //add event listener to search bar
   searchInput.addEventListener("input", function () {
     let listPokemon = document.querySelectorAll("li");
